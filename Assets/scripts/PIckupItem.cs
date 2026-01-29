@@ -1,4 +1,5 @@
 using UnityEngine;
+using static PlayerInventory;
 
 public class PIckupItem : MonoBehaviour
 {
@@ -14,12 +15,14 @@ public class PIckupItem : MonoBehaviour
         {
             case ItemType.JumpUnlock:
             {
-                 inv.hasJumpItem = true;
-                 break;
+                    inv.AddAbility(AbilityType.Jump);
+                    inv.hasJumpItem = true;
+                    break;
             }
 
             case ItemType.DashUnlock:
             {
+                inv.AddAbility(AbilityType.Dash);
                 inv.hasDashItem = true;
                 break;
             }
