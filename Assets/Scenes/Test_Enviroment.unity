@@ -207,9 +207,13 @@ MonoBehaviour:
   moveSpeed: 6
   gravity: -9.81
   jumpHeight: 1.5
+  slime: {fileID: 0}
+  frog: {fileID: 0}
+  rabbit: {fileID: 0}
   maxJumps: 2
   dashSpeed: 20
   dashDuration: 0.2
+  dashCooldown: 1
 --- !u!143 &82367342
 CharacterController:
   m_ObjectHideFlags: 0
@@ -344,6 +348,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInventory
   hasJumpItem: 0
   hasDashItem: 0
+  slot1: 0
+  slot2: 0
 --- !u!1 &133059062
 GameObject:
   m_ObjectHideFlags: 0
